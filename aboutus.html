@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
-    <link href="CSS/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/mystyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Sofia';font-size: 22px;
+    }
+    </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <a href="index.html" class="navbar-brand">CVRCE</a>
+<body onload="render()">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <a href="index.html" class="navbar-brand"><img src="images/cvr-logo.png" alt="CVRCE"  height="30" width="41"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -97,41 +102,57 @@
                
             </div>
         </div>
-        <div class="card" style="width:300px; float:left;margin:10px;">
-            <div class="card-header">
-                <p class="h4">Mission of Institute</p>
-                <p class="text-muted text-justify text-muted">
+        <div class="row">
+            <div id="loading1"></div>
+            <div class="card" style="width:300px; float:left;margin:10px;" id="card1">
+                <div class="card-header">
+                    <p class="h4">Vision of Institute</p>
+                    <p class="text-muted text-justify text-muted">
 
-                </p>
+                    </p>
+                </div>
+                <div class="card-body">
+                    To be a state of the art institution of engineering in pursuit of excellence, in the service of society.
+                </div>
             </div>
-            <div class="card-body">
-                To excel in providing quality education at under graduate and graduate levels. 
+            <div id="loading2"></div>
+            <div class="card" style="width:300px; float:left;margin:10px;" id="card2">
+                <div class="card-header">
+                    <p class="h4">Mission of Institute</p>
+                    <p class="text-muted text-justify text-muted">
 
-To encourage research and innovation.
+                    </p>
+                </div>
+                <div class="card-body">
+                    To excel in providing quality education at under graduate and graduate levels. 
 
-To provide infrastructure and facilities to meet the latest technological needs.
+                    To encourage research and innovation.
 
-To establish Centres of Excellence through active interaction with industry.
+                    To provide infrastructure and facilities to meet the latest technological needs.
 
-To nurture students towards holistic development with human values and ethics.
-            </div>
-           
-        </div>
-        <div class="card" style="width:300px; float:left;margin:10px;">
+                    To establish Centres of Excellence through active interaction with industry.
+
+                    To nurture students towards holistic development with human values and ethics.
+                </div>
             
-            <div class="card-body">
-                "Our vision of being a state of the art institution of engineering in pursuit of excellence has come true”
             </div>
-            <div class="card-footer">
-                <p class="h4"></p>
-                <p class="text-muted text-justify text-muted">
-                    – endorsed by none other than MHRD/NIRF of the Government of India which ranked CVR among the 101-150 rank group in the country and within top 3 private colleges in Telangana
-                </p>
+            <div id="loading3"></div>
+            <div class="card" style="width:300px; float:left;margin:10px;" id="card3">
+                
+                <div class="card-body">
+                    "Our vision of being a state of the art institution of engineering in pursuit of excellence has come true”
+                </div>
+                <div class="card-footer">
+                    <p class="h4"></p>
+                    <p class="text-muted text-justify text-muted">
+                        – endorsed by none other than MHRD/NIRF of the Government of India which ranked CVR among the 101-150 rank group in the country and within top 3 private colleges in Telangana
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="jumbotron bg-warning" style="clear:both;">
+    <div class="jumbotron " style="clear:both;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 align-self-center">
@@ -154,6 +175,7 @@ To nurture students towards holistic development with human values and ethics.
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/about.js"></script>
     <script src="https://use.fontawesome.com/f5cf23ddbf.js"></script>
 
 </body>

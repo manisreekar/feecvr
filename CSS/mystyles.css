@@ -1,22 +1,31 @@
 .format {
-    color: red;
-    background: grey;
+    color:yellow;
+    background:blueviolet;
 }
 
 @media screen and (max-width:768px) {
     .format {
-        color: red;
-        background: yellow;
+        color:green;
+        background: grey;
     }
 }
 
 @media screen and (max-width:575px) {
     .format {
-        color: cyan;
-        background: red;
+        color:darkolivegreen;
+        background:darkred;
     }
 }
 
 .heading{
     padding-top: 40px;
+}
+
+body{
+    background-color: rgb(177, 93, 244);
+   
+}
+header {
+    background-color: rgb(188, 140, 245) !important;
+    color: white;
 }
